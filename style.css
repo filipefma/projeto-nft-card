@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+--main-bg:hsl(217, 54%, 11%);
+--card-bg: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+body {
+  background-color: var(--main-bg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--card-bg);
+  margin-top: 50px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 0 30px;
+}
+
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  cursor: pointer;
+  background: var(--cyan);
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+.img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.img img:hover {
+  opacity: 0.5;
+} 
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+}
+.title:hover {
+  color: var(--cyan);
+}
+h3 {
+  color: var(--white);
+  margin-top: 25px;
+}
+
+.paragraph {
+  width: 100%;
+  color: var(--soft-blue);
+  margin: 25px 25px 0;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.info {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+#left-text {
+  color: var(--cyan);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#right-text {
+  color: var(--soft-blue);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.line {
+  width: 350px;
+  border: 1px solid var(--line);
+  margin-top: 25px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: var(--soft-blue);
+  font-size: 14px;
+  margin: 25px 0;
+}
+.footer img {
+  width: 10%;
+  margin-right: 10px;
+}
+.footer span {
+  color: var(--white);
+}
+.footer span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
